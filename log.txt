@@ -1,0 +1,355 @@
+2025-06-26 13:37:56,105 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getMe "HTTP/1.1 200 OK"
+2025-06-26 13:37:56,298 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-26 13:37:56,312 - Application started
+2025-06-26 13:38:06,902 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:38:16,606 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:38:18,754 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendMessage "HTTP/1.1 200 OK"
+2025-06-26 13:38:26,916 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:38:37,234 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:38:44,430 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:38:45,293 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendPhoto "HTTP/1.1 200 OK"
+2025-06-26 13:38:45,297 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 175, in handle_file
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:38:54,731 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:05,034 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:09,981 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:09,985 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 205, in handle_code
+    code = update.message.text.strip().upper()
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+2025-06-26 13:39:20,297 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:23,943 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:23,946 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 206, in handle_code
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:39:34,295 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:44,601 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:50,483 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:39:51,187 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendMessage "HTTP/1.1 200 OK"
+2025-06-26 13:40:00,812 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:11,186 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:21,474 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:31,788 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:36,680 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:36,681 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 205, in handle_code
+    code = update.message.text.strip().upper()
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+2025-06-26 13:40:47,012 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:52,118 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:40:52,120 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 206, in handle_code
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:41:02,504 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:07,023 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:08,392 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendMessage "HTTP/1.1 200 OK"
+2025-06-26 13:41:12,952 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:12,954 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 206, in handle_code
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:41:23,281 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:33,767 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:35,597 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:36,576 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendDocument "HTTP/1.1 200 OK"
+2025-06-26 13:41:36,578 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 175, in handle_file
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:41:45,931 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:41:56,250 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:03,299 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:03,302 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 206, in handle_code
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:42:11,124 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:11,127 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 205, in handle_code
+    code = update.message.text.strip().upper()
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+2025-06-26 13:42:21,551 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:22,282 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:22,284 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 205, in handle_code
+    code = update.message.text.strip().upper()
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+2025-06-26 13:42:32,615 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:33,241 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:33,243 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 206, in handle_code
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:42:43,564 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:53,900 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:56,850 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:42:57,850 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/sendMessage "HTTP/1.1 200 OK"
+2025-06-26 13:43:07,224 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:17,513 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:23,608 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:23,610 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 73, in command_last
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:43:33,974 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:44,394 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:51,519 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:43:51,520 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_application.py", line 1298, in process_update
+    await coroutine
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MyBots\UploaderBot\bot.py", line 73, in command_last
+    data = load_data()
+  File "D:\MyBots\UploaderBot\bot.py", line 29, in load_data
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nabavi\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-06-26 13:44:01,874 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:44:12,161 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:44:22,511 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:44:32,863 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:44:43,162 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:44:53,523 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:03,823 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:14,150 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:24,453 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:34,777 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:45,120 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:45:55,532 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:05,827 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:16,153 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:26,889 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:37,217 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:47,586 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:46:57,898 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:08,216 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:18,593 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:29,009 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:39,317 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:49,602 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:47:59,901 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
+2025-06-26 13:48:10,208 - HTTP Request: POST https://api.telegram.org/bot8193120697:AAE291HpctzLxdL6E7GXLoFyIQK2Qr1hDdg/getUpdates "HTTP/1.1 200 OK"
